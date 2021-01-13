@@ -4,7 +4,7 @@
 ## Hello!
 Ecrire un programme qui affiche "Hello World"
 
-_*Note :*_ COmmencer par un simple Hello World quand on utilise un nouveau langage ou un nouveau PC permet de s'assurer que l'environnement est opérationnel. Ici par exemple on vérifie que Python est bien installé.
+_*Note :*_ Commencer par un simple Hello World quand on utilise un nouveau langage ou un nouveau PC permet de s'assurer que l'environnement est opérationnel. Ici par exemple on vérifie que Python est bien installé.
 
 ## Hello You!
 Compléter le programme pour :
@@ -52,7 +52,9 @@ Peux-tu l'aider ?
 Le livre contient-il toutes les lettres de l'alphabet ?
 ```python
 import string
+livre = "Le jour de ses onze ans, Harry Potter, un orphelin élevé par un oncle et une tante qui le détestent, voit son existence bouleversée. Un géant vient le chercher pour l'emmener au collège Poudlard, école de sorcellerie, où une place l'attent depuis toujours. Qui est donc Harry Potter ? Et qui est l'effroyable V..., le mage dont personne n'ose prononcer le nom ?"
 liste_alphabet = list(string.ascii_lowercase)
+print(liste_alphabet)
 ```
 <details>
   <summary>Aide</summary>
@@ -98,4 +100,4 @@ Calculer toutes les occurrences du précédents livre.
 </details>
 
 ## (Difficile) Avec un dictionnaire
-Générer un dictionnaire contenant les occurrences.
+Génère un dictionnaire contenant les occurrences.
