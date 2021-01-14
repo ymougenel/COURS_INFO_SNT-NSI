@@ -38,7 +38,7 @@ Compléte le programme pour compter le nombre d'occurrences (apparitions) de la 
 ```python
 livre = "Le jour de ses onze ans, Harry Potter, un orphelin élevé par un oncle et une tante qui le détestent, voit son existence bouleversée. Un géant vient le chercher pour l'emmener au collège Poudlard, école de sorcellerie, où une place l'attent depuis toujours. Qui est donc Harry Potter ? Et qui est l'effroyable V..., le mage dont personne n'ose prononcer le nom ?"
 occurrences_i = 0
-for lettre in texte:
+for lettre in livre:
   if ...:
     ...
 ```
