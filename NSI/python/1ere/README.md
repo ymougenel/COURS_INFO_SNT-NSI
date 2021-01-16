@@ -1,5 +1,5 @@
 # Entraînement Python
-<img src="https://i.imgur.com/7jFH0SD.jpg?fb">
+<img src="https://inventwithpython.com/invent4thed/images/00060.jpeg">
 
 # 1. Input/Output et conversions
 ## Ex 1.1: Hello World!
