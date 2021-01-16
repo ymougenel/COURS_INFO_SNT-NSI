@@ -1,2 +1,7 @@
-# TP_INFO
-Travaux pratiques NSI/SNT
+# Travaux pratiques NSI/SNT
+## NSI
+  * [Python](NSI/python)
+## SNT
+  * [HTML](SNT/html)
+  
+
