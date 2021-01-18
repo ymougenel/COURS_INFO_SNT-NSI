@@ -22,6 +22,7 @@ f3 = "(3+5) - x = (y + 1)) / 2" # f3 est incorrecte
   <summary>Aide</summary>
   Nous avions vu dans les exercies de premières comment compter les occurences.
 </details>
+
 ## Une formule équilibrée et juste !
 Tu réalises qu'une formule équilibrée n'est pas forcément juste :
 ```python
@@ -30,6 +31,18 @@ f4 = "(1+9)) + x ("
 ```
 Pourrais-tu corriger la vérification ?
 
+## Jeu "Plus ou moins"
+Le jeu est tiré du très bon site d'apprentissage : [openclassroom](https://openclassrooms.com/fr/courses/19980-apprenez-a-programmer-en-c/14828-tp-plus-ou-moins-votre-premier-jeu#/id/r-14773)
+
+Voici la consigne :
+[jeu plus moins](../../../.REAMDME/jeu_plus_moins.png]
+<details>
+  <summary>Aide nombre aléatoire</summary>
+  ```python
+from random import randrange
+print(randrange(100))
+  ```
+</details>
 ## (Difficile) occurrences le retour
 Calculer toutes les occurrences du précédents livre.
 <details>
