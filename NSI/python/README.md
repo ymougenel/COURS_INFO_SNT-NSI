@@ -4,4 +4,4 @@
 * [Variables et affectations](./1ere/)
 
 ## Terminale
-* [Variables et affectations](./terminale/)
+* [Variables et affectations](./terminal/)
