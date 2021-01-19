@@ -20,7 +20,7 @@ f3 = "(3+5) - x = (y + 1)) / 2" # f3 est incorrecte
 ```
 <details>
   <summary>Aide</summary>
-  Nous avions vu dans les exercies de premières comment compter les occurences.
+  Nous avions vu dans les exercices de premières comment compter les occurences.
 </details>
 
 ## Une formule équilibrée et juste !
@@ -35,7 +35,7 @@ Pourrais-tu corriger la vérification ?
 Le jeu est tiré du très bon site d'apprentissage : [openclassroom](https://openclassrooms.com/fr/courses/19980-apprenez-a-programmer-en-c/14828-tp-plus-ou-moins-votre-premier-jeu#/id/r-14773)
 
 Voici la consigne :
-[jeu plus moins](../../../.README/jeu_plus_moins.png]
+<im src="../../../.README/jeu_plus_moins.png">
 <details>
   <summary>Aide nombre aléatoire</summary>
   ```python
