@@ -1,14 +1,22 @@
 # 4. Itérations
 
-## 4.1 La punition de Bart
+## 4.0  Bonjour la classe
+Peux-tu dire bonjour à la classe ?
+```python
+classe = ["Alain", "François", "Karima", "Enzo"]
+for TODO in TODO:
+  TODO
+```
+
+## 4.1 C'est carré
+Affiche le carré de tout les nombres entre 1 et 20
+
+## 4.2 La punition de Bart
 <img href="https://psicoedublog.files.wordpress.com/2013/05/board.jpg">
 Bart a de nouveau été punie : il doit recopier 2000 fois "I WILL NOT DO ANYTHING BAD EVER AGAIN".
 Cela l’empêche de participer au tournoi de foot ce week-end, et sans lui vous risquez de perdre :/
 
 Peut-être que tu pourrais l'aider avec tes connaissances d'informatique...
-
-## 4.2 C'est carré
-Affiche le carré de tout les nombres entre 1 et 20
 
 ## 4.3 Compte des occurrences
 Karim se demande combien de lettre 'i' contient son livre.
@@ -24,7 +32,6 @@ for lettre in livre:
 ### 4.4 Comparaison des occurrences
 Il se demande maintenant si le texte contient plus de lettre 'e' ou de lettre 'a'.
 Serais-tu lui dire ?
-
 
 ## 4.5 (optionnel) Une formule équilibrée
 Une formule mathématique peut contenir des parenthèses :

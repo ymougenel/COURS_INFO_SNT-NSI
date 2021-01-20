@@ -1,7 +1,4 @@
 # Entraînement Python
 
-## 1ere
-* [Variables et affectations](./1ere/)
-
-## Terminale
-* [Variables et affectations](./terminal/)
+* [1ere](./1ere/)
+* [terminal](./terminal/)

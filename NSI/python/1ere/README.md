@@ -9,3 +9,6 @@ Variables, affectations, conversions de type et entrée/sortie :
 ## Conditionnel
 *_"Avec des SI on mettrait Paris en bouteille"_*
 * [Excercices](./conditionnel)
+
+## Itérations
+* [Excercices](./iterations)
