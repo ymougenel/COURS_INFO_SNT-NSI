@@ -18,7 +18,22 @@ Cela l’empêche de participer au tournoi de foot ce week-end, et sans lui vous
 
 Peut-être que tu pourrais l'aider avec tes connaissances d'informatique...
 
-## 4.3 Compte des occurrences
+## 4.3 Moyenne de classe
+Dumbledore sohaite calculer la moyenne de sa classe : il se souvient que la moyenne est le total des notes diviser par le nombre d'éléments de la liste (en python `len(liste_notes)`) mais ne parvient pas à calculer le total:
+```python
+liste_notes = [12, 15, 11, 16]
+total = 0
+TODO
+```
+## 4.4 Présentiel
+Écris un programme qui :
+1. Demande le nom de l'élève en entrée
+2. Vérifie si l'élève appartient à la classe
+```Python
+classe = ["Karim", "George", "Sandy", "Nicolas", "Elise"]
+```
+
+## 4.5 Compte des occurrences
 Karim se demande combien de lettre 'i' contient son livre.
 Complète le programme pour compter le nombre d'occurrences (apparitions) de la lettre 'i'.
 ```python
@@ -29,11 +44,11 @@ for lettre in livre:
     TODO
 ```
 
-### 4.4 Comparaison des occurrences
+### 4.6 Comparaison des occurrences
 Il se demande maintenant si le texte contient plus de lettre 'e' ou de lettre 'a'.
 Serais-tu lui dire ?
 
-## 4.5 (optionnel) Une formule équilibrée
+## 4.7 (optionnel) Une formule équilibrée
 Une formule mathématique peut contenir des parenthèses :
 ```python
 (3+5) - x = (y + 1) / 2
