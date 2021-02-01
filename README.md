@@ -1,16 +1,8 @@
 # Travaux pratiques NSI/SNT
 
 ## Capture The Flag!
-```python
-from datetime import datetime, timedelta
-site = "https://github.com/ymougenel/COURS_INFO_SNT-NSI"
-now = datetime.now()
-release_date = datetime(2021,02,01)
-while now < release_date:
-  print("Downloading flags... (termination estimated on monday)")
-  now = datetime.now()
-print("Let's go!")
-```
+Let's the fun begin: [https://ymougenel.com/ctf/](https://ymougenel.com/ctf/)
+Rappel [des notions Web](https://docs.google.com/presentation/d/e/2PACX-1vSJvf0lHRtJKY3oQ8w3hhi3hhMYZqDlCMJCGYy60D9jCT5Zf5xCsxyNZy9IEBfQ6e9D_hcbD5NA-dQ3/pub?start=false&loop=false&delayms=3000#slide=id.gb402f6803e_0_0)
 ## NSI
   * [Python](NSI/python)
 ## SNT
