@@ -1,3 +1,6 @@
+# Confinement
+Voici les informations suite au confinement [PDF](./confinement.pdf)
+
 # Travaux pratiques NSI/SNT
 
 ## Capture The Flag!
