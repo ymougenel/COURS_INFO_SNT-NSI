@@ -1,5 +1,5 @@
 # Confinement
-Voici les informations suite au confinement [PDF](./confinement.pdf)
+Voici les informations suite au confinement [PDF](.README/confinement.pdf)
 
 # Travaux pratiques NSI/SNT
 
