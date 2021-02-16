@@ -1,5 +1,8 @@
+# Noms des joueurs
 nom_joueur1 = ""
 nom_joueur2 = ""
+
+# Symboles des joueurs
 symbole_joueur1 = "X"
 symbole_joueur2 = "O"
 
@@ -7,22 +10,23 @@ joueur_courant = ""
 symbole_courant = ""
 
 # Les 3 lignes du plateau de morpion
-# BONUS 1ere: transformer les 3 lignes en matrice
-# TODO: me lien matrice
+# BONUS 1ere: transformer les 3 lignes en matrice (aide : https://cahier-de-prepa.fr/psi-pv/download?id=300)
 ligne1 = ["", "", ""]
 ligne2 = ["", "", ""]
 ligne3 = ["", "", ""]
 
-
+# Initialise la partie
+# Place le premier joueur comme joueur_courant
 def init_partie():
-    global joueur_courant
+    global joueur_courant, symbole_courant
     joueur_courant = nom_joueur1
-    global symbole_courant
     symbole_courant = symbole_joueur1
 
 
-# TODO: eleve excercice
+# Lecture du plateau de jeu
+# Retourne la valeur à la ligne i, colonne j
 def lire_plateau(i, j):
+    # TODO: eleve excercice
     if i == 0:
         return ligne1[j]
     if i == 1:
@@ -31,8 +35,10 @@ def lire_plateau(i, j):
         return ligne3[j]
 
 
-# TODO: eleve excercice
+# Ecriture sur plateau de jeu
+# Place la valeur à la ligne i, colonne j
 def ecrire_plateau(i, j, valeur):
+    # TODO: eleve excercice
     if i == 0:
         ligne1[j] = valeur
     if i == 1:
@@ -40,13 +46,21 @@ def ecrire_plateau(i, j, valeur):
     if i == 2:
         ligne3[j] = valeur
 
-
+# Demande aux joueurs d'entrer leurs noms
 def demander_noms_joueurs():
-    global nom_joueur1
-    global nom_joueur2
+    global nom_joueur1, nom_joueur2
     # TODO: demander les noms des joueurs en entrée
     nom_joueur1 = "John"
     nom_joueur2 = "Marc"
+
+# Demande une entrée clavier comprise entre val_min et val_max
+def demander_entier(val_min, val_max):
+    # TODO: exercice eleve
+    # Bonus terminal: tester le type avant de convertir en entier (exemple: si l'utilisateur tape "azerty")
+    valeur = int(input("Ou voulez vous jouer ?"))
+    while val_min > valeur >= val_max:
+        valeur = int(input("Ou voulez vous jouer ?"))
+    return valeur
 
 
 def demander_ligne():
@@ -59,18 +73,10 @@ def demander_colonne():
     return demander_entier(0, 3)
 
 
-# TODO: exercice eleve
-def demander_entier(val_min, val_max):
-    # Bonus terminal: tester le type avant de convertir en entier (exemple: si l'utilisateur tape "azerty")
-    valeur = int(input("Ou voulez vous jouer ?"))
-    while val_min > valeur >= val_max:
-        valeur = int(input("Ou voulez vous jouer ?"))
-    return valeur
 
 
 def changer_joueur():
-    global joueur_courant
-    global symbole_courant
+    global joueur_courant, symbole_courant
     if joueur_courant == nom_joueur1:
         joueur_courant = nom_joueur2
         symbole_courant = symbole_joueur2
@@ -79,7 +85,7 @@ def changer_joueur():
         symbole_courant = symbole_joueur1
 
 
-# TODO: me pretty display
+# TODO teacher: pretty display
 def afficher_plateau():
     print(ligne1)
     print(ligne2)
