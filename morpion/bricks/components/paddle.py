@@ -10,7 +10,7 @@ from bricks.constants import *
 class Paddle(pygame.sprite.Sprite):
     def __init__(self):
         super(Paddle, self).__init__()
-        self.surf = pygame.Surface((75, 25))
+        self.surf = pygame.Surface((95, 25))
         self.surf.fill(PADDLE_COLOR)
         self.rect = self.surf.get_rect()
         self.rect.move_ip(SCREEN_WIDTH / 2, SCREEN_HEIGHT - 7)

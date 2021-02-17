@@ -1,33 +1,11 @@
 import pygame
-import sys
-
+from bricks.CollisionHandler import process_collisions
+from bricks.boards.BoardLoader import load_board
 from bricks.components.ball import Ball
 from bricks.components.block import Block
 from bricks.constants import *
-
-from pygame.locals import (
-    K_ESCAPE,
-    KEYDOWN,
-    QUIT,
-)
-
 from bricks.components.paddle import Paddle
-
-
-def _process_quit():
-    for event in pygame.event.get():
-        if event.type == KEYDOWN:
-            if event.key == K_ESCAPE:
-                sys.exit()
-        elif event.type == QUIT:
-            sys.exit()
-
-
-def _process_collition():
-    block_collision = pygame.sprite.spritecollideany(ball, blocks)
-    if block_collision:
-        blocks.remove(block_collision)
-        print("Collision")
+from bricks.events.EventHandler import process_events
 
 def _gather_sprites():
     all_sprites = pygame.sprite.Group()
@@ -37,36 +15,34 @@ def _gather_sprites():
         all_sprites.add(b)
     return all_sprites
 
+
 if __name__ == "__main__":
     pygame.init()
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 
     paddle = Paddle()
     ball = Ball()
-    block = Block()
-
-    blocks = pygame.sprite.Group()
-    blocks.add(block)
+    blocks = load_board("Choungui")
     clock = pygame.time.Clock()
 
     bricks = [""]
     while bricks:
 
-        # Handle inputs
-        _process_quit()
+        # Move ball and paddle
         keyboard_inputs = pygame.key.get_pressed()
         paddle.move(keyboard_inputs)
         ball.move()
 
-        _process_collition()
+        # Process collisions
+        process_collisions(ball, paddle, blocks)
+
+        # Handle events
+        process_events()
+
         # Display elements
         screen.fill(BACKGROUND_COLOR)
-
         for sprite in _gather_sprites():
             sprite.display(screen)
-        # paddle.display(screen)
-        # ball.display(screen)
         pygame.display.flip()
         # Ensure framerate
         clock.tick(30)
-
