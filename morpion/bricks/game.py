@@ -25,8 +25,7 @@ if __name__ == "__main__":
     blocks = load_board("Choungui")
     clock = pygame.time.Clock()
 
-    bricks = [""]
-    while bricks:
+    while blocks:
 
         # Move ball and paddle
         keyboard_inputs = pygame.key.get_pressed()

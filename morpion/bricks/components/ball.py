@@ -1,16 +1,7 @@
-from pygame.locals import (
-    K_UP,
-    K_DOWN,
-    K_LEFT,
-    K_RIGHT,
-    K_ESCAPE,
-    KEYDOWN,
-    QUIT,
-)
+
 import pygame
 
 from bricks.constants import *
-from bricks.events import Events
 from bricks.events.Events import BALL_LOST
 
 
@@ -23,7 +14,7 @@ class Ball(pygame.sprite.Sprite):
         self.rect.move_ip(SCREEN_WIDTH / 2, SCREEN_HEIGHT * 3 / 4)
         self.speed = BALL_DEFAULT_SPEED
 
-        self.vx = 1
+        self.vx = 0.9
         self.vy = -1
         self.size = BALL_DEFAULT_SIZE
 

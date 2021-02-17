@@ -3,6 +3,7 @@ import pygame
 from bricks.boards.BlockTypes import BlockTypes
 from bricks.components.block import Block
 from bricks.constants import *
+import random
 
 
 def load_board(name):
@@ -26,5 +27,6 @@ def load_board(name):
 
 
 def _add_block(blocks, line, column):
-    block = Block(NORMAL_BLOCK_SIZE[0] * column, NORMAL_BLOCK_SIZE[1] * line)
+    color = BLOCKS_COLORS[random.randint(0, len(BLOCKS_COLORS) - 1)]
+    block = Block(NORMAL_BLOCK_SIZE[0] * column, NORMAL_BLOCK_SIZE[1] * line, color)
     blocks.add(block)
