@@ -2,13 +2,10 @@ import pygame
 import sys
 
 from bricks.components.ball import Ball
+from bricks.components.block import Block
 from bricks.constants import *
 
 from pygame.locals import (
-    K_UP,
-    K_DOWN,
-    K_LEFT,
-    K_RIGHT,
     K_ESCAPE,
     KEYDOWN,
     QUIT,
@@ -26,11 +23,31 @@ def _process_quit():
             sys.exit()
 
 
+def _process_collition():
+    block_collision = pygame.sprite.spritecollideany(ball, blocks)
+    if block_collision:
+        blocks.remove(block_collision)
+        print("Collision")
+
+def _gather_sprites():
+    all_sprites = pygame.sprite.Group()
+    all_sprites.add(ball)
+    all_sprites.add(paddle)
+    for b in blocks:
+        all_sprites.add(b)
+    return all_sprites
+
 if __name__ == "__main__":
     pygame.init()
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+
     paddle = Paddle()
     ball = Ball()
+    block = Block()
+
+    blocks = pygame.sprite.Group()
+    blocks.add(block)
+    clock = pygame.time.Clock()
 
     bricks = [""]
     while bricks:
@@ -39,10 +56,17 @@ if __name__ == "__main__":
         _process_quit()
         keyboard_inputs = pygame.key.get_pressed()
         paddle.move(keyboard_inputs)
-        ball.move(keyboard_inputs)
+        ball.move()
 
+        _process_collition()
         # Display elements
         screen.fill(BACKGROUND_COLOR)
-        paddle.display(screen)
-        ball.display(screen)
+
+        for sprite in _gather_sprites():
+            sprite.display(screen)
+        # paddle.display(screen)
+        # ball.display(screen)
         pygame.display.flip()
+        # Ensure framerate
+        clock.tick(30)
+
