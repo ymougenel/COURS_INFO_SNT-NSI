@@ -8,7 +8,7 @@ from pygame.locals import (
 from bricks.events.Events import BALL_LOST
 
 
-def _process_quit(events):
+def __process_quit(events):
     for event in events:
         if event.type == KEYDOWN:
             if event.key == K_ESCAPE:
@@ -19,11 +19,11 @@ def _process_quit(events):
 
 def process_events():
     events = pygame.event.get()
-    _process_quit(events)
-    _process_custom_events(events)
+    __process_quit(events)
+    __process_custom_events(events)
 
 
-def _process_custom_events(events):
+def __process_custom_events(events):
     for event in events:
         if event.type == BALL_LOST:
             print("You lost")

@@ -3,7 +3,7 @@ import sys, pygame
 import gestionEvenements
 from balle import Balle
 from brique import Brique
-from projets.casse_briques.item import Item
+from item import Item
 from raquette import Raquette
 from constants import *
 from events import Events
@@ -26,7 +26,12 @@ for i in range(8):
 while True:
 
     # Evenements
-    gestionEvenements.gerer_evenements(raquette)
+    fin = gestionEvenements.gerer_evenements(raquette)
+    if fin:
+        print("Fin")
+        pygame.display.quit()
+        pygame.quit()
+        sys.exit()
 
     # Déplacements
     touches_clavier = pygame.key.get_pressed()
@@ -60,8 +65,9 @@ while True:
 
     collision_item_raquette = pygame.sprite.spritecollideany(raquette, toutes_items)
     if collision_item_raquette:
-        raquette.surf = pygame.transform.scale( raquette.surf, (RAQUETTE_LARGEUR_MAX, RAQUETTE_HAUTEUR))
+        raquette.surf = pygame.transform.scale(raquette.surf, (RAQUETTE_LARGEUR_MAX, RAQUETTE_HAUTEUR))
         pygame.time.set_timer(Events.RETRECIR_RAQUETTE.value, TIMER_ITEM)
+        toutes_items.remove(collision_item_raquette)
 
     pygame.display.flip()
     horloge.tick(30)
