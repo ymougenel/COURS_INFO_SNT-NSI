@@ -15,5 +15,8 @@ class Brique(pygame.sprite.Sprite):
 
         self.rect.move_ip(x, y)
 
+        self.item = random.randint(0, PROBABILITE_ITEM) == 0
+        self.item = True
+
     def display(self, screen: pygame.Surface):
         screen.blit(self.surf, self.rect)
