@@ -15,7 +15,7 @@ class Raquette(pygame.sprite.Sprite):
         if touches_clavier[pygame.K_LEFT]:
             self.rect.move_ip(-VITESSE_RAQUETTE, 0)
         if touches_clavier[pygame.K_RIGHT]:
-            self.rect.move_ip(VITESSE_RAQUETTE, 0)
+            self.rect.move_ip(+VITESSE_RAQUETTE, 0)
         if self.rect.left < 0:
             self.rect.left = 0
         if self.rect.right > ECRAN_LARGEUR:
