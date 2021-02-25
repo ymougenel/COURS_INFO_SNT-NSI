@@ -1,6 +1,6 @@
 import sys
 import pygame
-from Events import *
+from events import *
 def gerer_evenements():
     # Gestion des evenements
     for event in pygame.event.get():

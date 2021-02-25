@@ -1,6 +1,6 @@
 import pygame, sys
 
-from Events import *
+from events import *
 from constants import *
 import random
 

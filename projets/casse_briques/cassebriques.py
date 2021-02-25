@@ -1,9 +1,9 @@
 import sys, pygame
 
-import GestionEvenements
-from Balle import Balle
-from Brique import Brique
-from Raquette import Raquette
+import gestionEvenements
+from balle import Balle
+from brique import Brique
+from raquette import Raquette
 from constants import *
 
 pygame.init()
@@ -23,7 +23,7 @@ for i in range(8):
 while True:
 
     # Evenements
-    GestionEvenements.gerer_evenements()
+    gestionEvenements.gerer_evenements()
 
     # Déplacements
     touches_clavier = pygame.key.get_pressed()
