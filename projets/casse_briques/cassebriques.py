@@ -23,9 +23,6 @@ for i in range(8):
     brique = Brique(i * BRIQUE_LARGEUR + i * 3, 0)
     toutes_briques.add(brique)
 
-timer = 0
-
-
 while True:
 
     # Evenements
