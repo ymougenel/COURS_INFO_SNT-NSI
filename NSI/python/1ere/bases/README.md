@@ -14,6 +14,7 @@ Compléter le programme pour :
   <summary>Demander une entrée</summary>
 La fonction `input` permet de demander à l'utilisateur d'entrer une valeur (cf: fiche récapitulative)
 </details>
+
 ## Ex 1.3: Date de naissance de Lucie
 Lucie a 24 ans, complète le code en remplaçant le TODO pour trouver son année de naissance :
 ```python
