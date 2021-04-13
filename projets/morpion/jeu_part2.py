@@ -96,10 +96,4 @@ if __name__ == '__main__':
         colonne_jouee = demander_colonne()
 
         ecrire_plateau(ligne_jouee, colonne_jouee, symbole_courant)
-
-        if coup_gagnant(symbole_courant):
-            print("Vistoire de " + joueur_courant)
-            partie_terminee = True
-        else:
-            partie_terminee = plateau_remplie()
         changer_joueur()
