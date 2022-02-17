@@ -1,22 +1,36 @@
 # 4. Itérations
 
-## 4.0  Bonjour la classe
-Peux-tu dire bonjour à la classe ?
-```python
-classe = ["Alain", "François", "Karima", "Enzo"]
-for TODO in TODO:
-  TODO
-```
-
-## 4.1 C'est carré
-Affiche le carré de tout les nombres entre 1 et 20
-
-## 4.2 La punition de Bart
+## 4.1 La punition de Bart
 <img href="https://psicoedublog.files.wordpress.com/2013/05/board.jpg">
 Bart a de nouveau été punie : il doit recopier 2000 fois "I WILL NOT DO ANYTHING BAD EVER AGAIN".
 Cela l’empêche de participer au tournoi de foot ce week-end, et sans lui vous risquez de perdre :/
 
 Peut-être que tu pourrais l'aider avec tes connaissances d'informatique...
+
+## 4.2 C'est carré
+Afficher le carré de tout les nombres entre 0 et 20 : 0 1 4 9 16 25 .... 400
+
+
+## 4.3 Valeur entre 50 et 100
+Afficher toutes les valeurs entre 50 et 100 : 50 51 52 53 54 55 ... 98 99 100
+
+## 4.4 Tester le code suivant
+```python
+for i in range(10,15):
+  print(i)
+```
+Que-ce-qui s'affiche ?
+Afficher toutes les valeurs entre 50 et 100 : 50 51 52 53 54 55 ... 98 99 100
+
+## 4.3  Bonjour la classe
+Peux-tu compléter le code suivant pour dire bonjour à la classe ?
+```python
+classe = ["Alain", "François", "Karima", "Enzo"]
+for i in range(?):
+  print("Bonjour" + ?)
+```
+
+
 
 ## 4.3 Moyenne de classe
 Dumbledore sohaite calculer la moyenne de sa classe : il se souvient que la moyenne est le total des notes diviser par le nombre d'éléments de la liste (en python `len(liste_notes)`) mais ne parvient pas à calculer le total:
